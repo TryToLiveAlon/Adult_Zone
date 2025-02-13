@@ -4,6 +4,6 @@ module.exports = {
     freeChannelID: '-1002422757094',   // Channel ID for free users
     premiumChannelID: '-1002406050801', // Channel ID for premium users
     adminID:"6660736046",
- 
-  mongoVideoURI:"mongodb+srv://Hacksrvkyt:Hacksrvkyt@cluster0.ag7ba.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    WEBHOOK_URL: "https://adult-zone-tau.vercel.app/api/webhook",
+    mongoVideoURI:"mongodb+srv://Hacksrvkyt:Hacksrvkyt@cluster0.ag7ba.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 };
