@@ -7,6 +7,9 @@ cron.schedule('0 * * * *', async () => {
     await checkExpiredSubscriptions();
 });
 // Initialize the bot instance here
-const bot = new TelegramBot(config.token, { polling: true });
+const bot = new TelegramBot(config.token, { webHook: true });
+
+const WEBHOOK_URL = `https://adult-zone-tau.vercel.app/api/webhook`; // Replace with your actual Vercel URL
+bot.setWebHook(WEBHOOK_URL);
 
 module.exports = bot;  // Export the bot instance to be used in other files
