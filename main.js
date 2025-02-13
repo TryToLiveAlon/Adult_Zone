@@ -81,15 +81,3 @@ bot.onText(/\/info/, async (msg) => {
     const chatId = msg.chat.id;
     await sendInfoMessage(chatId);
 });
-
-// Command to subscribe (upgrade to premium)
-bot.onText(/\/subscribe/, async (msg) => {
-    const chatId = msg.chat.id;
-    const text = msg.text.toLowerCase();
-
-    if (text === "/subscribe premium") {
-        await upgradeToPremium(chatId);
-    } else if (text === "/subscribe free") {
-        await downgradeToFree(chatId);
-    }
-});
