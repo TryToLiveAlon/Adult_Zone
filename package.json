@@ -1,16 +1,16 @@
 {
-  "name": "your-project-name",
+  "name": "devil",
   "version": "1.0.0",
   "description": "Your project description",
-  "main": "main.js",  // or your entry point file, e.g., 'api/bot.js'
+  "main": "main.js",  
   "scripts": {
-    "start": "node api/bot.js"  // or the appropriate entry file for your app
+    "start": "node api/bot.js"  
   },
   "dependencies": {
-    "express": "^4.18.1",  // Express for creating the web server
-    "node-telegram-bot-api": "^0.50.0",  // For interacting with Telegram Bot API
-    "mongodb": "^4.5.0",  // MongoDB client to interact with your databases
-    "node-cron": "^3.0.0"  // For scheduling tasks like the cron job you have in your bot
+    "express": "^4.18.1",  
+    "node-telegram-bot-api": "^0.50.0",
+    "mongodb": "^4.5.0",  
+    "node-cron": "^3.0.0"
   },
   "devDependencies": {},
   "engines": {
