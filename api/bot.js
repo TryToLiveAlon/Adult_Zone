@@ -10,10 +10,9 @@ app.post('/api/webhook', (req, res) => {
     res.sendStatus(200);
 });
 
-// Default route to keep bot awake
+// Default route to keep the bot awake
 app.get('/', (req, res) => {
     res.send("🤖 Telegram Bot is Live!");
 });
 
-// Export handler for Vercel
 module.exports = app;
