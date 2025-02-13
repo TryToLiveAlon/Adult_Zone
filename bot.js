@@ -9,6 +9,6 @@ cron.schedule('0 * * * *', async () => {
 // Initialize the bot instance here
 const bot = new TelegramBot(config.token, { webHook: true });
 
-bot.setWebHook(config.WEBHOOK_URL);
+bot.setWebHook(config.WEBHOOK_URL, { max_connections: 40 });
 
 module.exports = bot;  // Export the bot instance to be used in other files
